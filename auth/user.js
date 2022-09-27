@@ -9,6 +9,7 @@ const user = getUser();
 //     - check if there is not a user and if so do the redirect
 //       redirect code: location.replace(`/auth/?redirectUrl=${encodeURIComponent(location)}`);
 if (!user) {
+    // THIS IS WHERE YOU'LL ADD FILE PATH TO REDIRECT TO SIGNED IN PAGES (I think...)
     location.replace(`/auth/?redirectUrl=${encodeURIComponent(location)}`);
 }
 

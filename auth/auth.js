@@ -17,8 +17,8 @@ const redirectUrl = params.get('redirectUrl') || '../';
 //      - replace location with redirectUrl
 const user = getUser();
 if (user) {
-    // THIS IS WHERE YOU'LL ADD FILE PATH TO REDIRECT TO SIGNED IN PAGES (I think...)
-    location.replace(`/auth/?redirectUrl=${encodeURIComponent(location)}`);
+    // location.replace(`/auth/?redirectUrl=${encodeURIComponent(location)}`);
+    location.replace('/');
 }
 
 // Sign up options
